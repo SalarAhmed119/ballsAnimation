@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            
+            .common{
+                width: 200px;
+                height: 200px;
+                border-radius: 200px;
+                display: inline-block;
+                animation-name: ballsAnimation;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in;
+                animation-direction: alternate;
+            }
+            @keyframes ballsAnimation {
+                0%{
+                    transform: translateY(0%);
+                }
+                100%{
+                    transform: translateY(200%);
+                }
+            }
+            .red{
+                background: red;
+                animation-name: redBall;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in;
+                animation-direction: alternate;
+            }
+            @keyframes redBall {
+                0%{
+                    transform: translateY(0%);
+                }
+                30%{
+                    background: black;
+                }
+                50%{
+                    background: orange;
+                }
+                100%{
+                    transform: translateY(200%);
+                }
+            }
+            .green{
+                background: green;
+                animation-delay: 0.2s;
+            }
+            .blue{
+                background: blue;
+                animation-delay: 0.3s;
+            }
+            .yellow{
+                background: yellow;
+                animation-delay: 0.4s;
+            }
+           .purple{
+                background: purple;
+                animation-delay: 0.5s;
+            }
+            .light-blue{
+                background: lightblue;
+                animation-delay: 0.6s;
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>BUIL THIS PROJECT</h1>
+        <div class="common red"></div>
+        <div class="common green"></div>
+        <div class="common blue"></div>
+        <div class="common yellow"></div>
+        <div class="common purple"></div>
+        <div class="common light-blue"></div>
+    </body>
+</html>

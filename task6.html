@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            
+            .common{
+                width: 200px;
+                height: 200px;
+                border-radius: 200px;
+                display: inline-block;
+            }
+            .red{
+                background: red;
+            }
+            .green{
+                background: green;
+            }
+            .blue{
+                background: blue;
+            }
+            .yellow{
+                background: yellow;
+            }
+           .purple{
+                background: purple;
+                
+            }
+            .light-blue{
+                background: lightblue;
+                animation-name: lightBlueAnimation;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in;
+                animation-direction: alternate;
+            }
+            @keyframes lightBlueAnimation {
+                0%{
+                    transform: translateY(0%);
+                }
+                100%{
+                    transform: translateY(200%);
+                }
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>BUIL THIS PROJECT</h1>
+        <div class="common red"></div>
+        <div class="common green"></div>
+        <div class="common blue"></div>
+        <div class="common yellow"></div>
+        <div class="common purple"></div>
+        <div class="common light-blue"></div>
+    </body>
+</html>
